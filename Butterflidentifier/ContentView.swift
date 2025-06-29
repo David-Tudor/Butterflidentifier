@@ -48,7 +48,7 @@ struct ContentView: View {
                         
                         var outputString = ""
                         output?.targetProbability.enumerated().forEach({ key, value in
-                            outputString += "\(key): \(value.value)\n"
+                            outputString += "\(value.key): \(value.value)\n"
                         })
 
                         modelOutput = outputString
